@@ -1,0 +1,54 @@
+{
+  "name": "Saber",
+  "image": "tschaffter/saber-devcontainer:test",
+
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:1.0.6": {
+      "version": "20.10.18"
+    }
+  },
+
+  "settings": {},
+
+  "extensions": [
+    "1000ch.svgo",
+    "Angular.ng-template",
+    "dbaeumer.vscode-eslint",
+    "emeraldwalk.RunOnSave",
+    "esbenp.prettier-vscode",
+    "firsttris.vscode-jest-runner",
+    "GitHub.vscode-pull-request-github",
+    "Gruntfuggly.todo-tree",
+    "humao.rest-client",
+    "mhutchie.git-graph",
+    "mongodb.mongodb-vscode",
+    "ms-python.python",
+    "mtxr.sqltools-driver-mysql",
+    "mtxr.sqltools-driver-pg",
+    "mtxr.sqltools",
+    "nrwl.angular-console",
+    "Pivotal.vscode-boot-dev-pack",
+    "ritwickdey.LiveServer",
+    "shengchen.vscode-checkstyle",
+    "stkb.rewrap",
+    "vscjava.vscode-gradle",
+    "vscjava.vscode-java-pack",
+    "vscjava.vscode-lombok",
+    "webhint.vscode-webhint"
+  ],
+
+  "forwardPorts": [
+    4200
+  ],
+
+  "portsAttributes": {
+    "4200": {
+      "label": "challenge-registry",
+      "onAutoForward": "silent"
+    }
+  },
+
+	"remoteUser": "vscode",
+  "shutdownAction": "stopContainer",
+  "runArgs": ["--name", "saber_devcontainer"]
+}
