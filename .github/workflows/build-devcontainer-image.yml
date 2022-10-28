@@ -12,7 +12,7 @@ on:
       - 'tools/devcontainers/saber/**/*'
 
 env:
-  IMAGE_REPOSITORY: sagebionetworks/saber-devcontainer
+  IMAGE_REPOSITORY: tschaffter/saber-devcontainer
   DEFAULT_BRANCH: main
 
 jobs:
