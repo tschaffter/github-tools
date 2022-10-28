@@ -1,6 +1,6 @@
 {
   "name": "Saber",
-  "image": "tschaffter/saber-devcontainer:test",
+  "image": "tschaffter/saber-devcontainer:fbd2f58d",
 
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:1.0.6": {
