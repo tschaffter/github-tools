@@ -72,7 +72,7 @@ function workspace-nx-cloud-help {
 }
 
 function workspace-welcome {
-  echo "Welcome to the Saber monorepo! 👋"
+  echo "Welcome to the GitHub Tools monorepo! 👋"
 
   if [ ! -d "node_modules" ]; then
     printf "%s\n" \

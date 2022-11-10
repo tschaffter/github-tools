@@ -1,6 +1,6 @@
 {
   "name": "GitHub Tools",
-  "image": "tschaffter/github-tools-devcontainer:test",
+  "image": "tschaffter/github-tools-devcontainer:528bcedc",
 
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:1.0.6": {
