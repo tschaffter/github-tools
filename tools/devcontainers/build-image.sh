@@ -3,5 +3,5 @@
 # This script must be run from the folder that includes it.
 
 devcontainer build \
-  --image-name tschaffter/saber-devcontainer:test \
-  --workspace-folder saber
+  --image-name tschaffter/github-tools-devcontainer:test \
+  --workspace-folder github-tools
