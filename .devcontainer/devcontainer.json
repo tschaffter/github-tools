@@ -1,6 +1,6 @@
 {
-  "name": "Saber",
-  "image": "tschaffter/saber-devcontainer:fbd2f58d",
+  "name": "GitHub Tools",
+  "image": "tschaffter/github-tools-devcontainer:test",
 
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:1.0.6": {
@@ -43,12 +43,12 @@
 
   "portsAttributes": {
     "4200": {
-      "label": "challenge-registry",
+      "label": "web-app",
       "onAutoForward": "silent"
     }
   },
 
 	"remoteUser": "vscode",
   "shutdownAction": "stopContainer",
-  "runArgs": ["--name", "saber_devcontainer"]
+  "runArgs": ["--name", "github_tools_devcontainer"]
 }

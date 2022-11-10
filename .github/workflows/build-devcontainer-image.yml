@@ -5,14 +5,14 @@ on:
       - 'main'
     paths:
       - '.github/workflows/build-devcontainer-image.yml'
-      - 'tools/devcontainers/saber/**/*'
+      - 'tools/devcontainers/github-tools/**/*'
   pull_request:
     paths:
       - '.github/workflows/build-devcontainer-image.yml'
-      - 'tools/devcontainers/saber/**/*'
+      - 'tools/devcontainers/github-tools/**/*'
 
 env:
-  IMAGE_REPOSITORY: tschaffter/saber-devcontainer
+  IMAGE_REPOSITORY: tschaffter/github-tools-devcontainer
   DEFAULT_BRANCH: main
 
 jobs:
@@ -25,7 +25,7 @@ jobs:
         uses: docker://hadolint/hadolint:latest
         with:
           entrypoint: hadolint
-          args: tools/devcontainers/saber/.devcontainer/Dockerfile
+          args: tools/devcontainers/github-tools/.devcontainer/Dockerfile
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
@@ -51,7 +51,7 @@ jobs:
 
       - name: Build the image
         run: |
-          WORKSPACE_FOLDER="tools/devcontainers/saber"
+          WORKSPACE_FOLDER="tools/devcontainers/github-tools"
           IMAGE_NAME=${{ steps.prep.outputs.image_name }}
           IMAGE_TAG=${{ steps.prep.outputs.devcontainer_version }}
 
