@@ -16,6 +16,9 @@
   "features": {
     // docker features must be specified in the developer facing
     // devcontainer.json for VS Code to properly mount the docker sockets.
+    "ghcr.io/devcontainers/features/aws-cli:1.0.5": {
+      "version": "2.8.12"
+    }
   },
 
   // The reference properties listed below are not used during the devcontainer
